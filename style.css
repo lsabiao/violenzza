@@ -1,5 +1,5 @@
 *{
-    font-family: 'Spline Sans Mono', monospace !important;
+    font-family: 'Spline Sans Mono', monospace ;
     margin: 0;
     padding: 0;
 }
@@ -17,55 +17,209 @@ nav{
     width:100%;
     height: 50px;
     background-color: #69293D;
+    -webkit-box-shadow: 0 6px 10px 0px rgba(0,0,0,.2);
+    box-shadow: 0 6px 10px 0px rgba(0,0,0,.2);
+    z-index: 999;
+    /* border-radius: 0px 0px 5px 5px; */
+
 }
 
-nav a{
+nav .bgchange{
+    height: 100%;
+    padding: 17px 10px;
     color: #FCF7F8;
 }
-nav a:hover{
-    color: #030303;
+nav .bgchange:hover{
+    color: #69293D;
+    background-color: #FCF7F8;
     transition: 0.2s ease-in-out;
+}
+nav a img:hover{
+    background-color: #FCF7F8;
 }
 
 #logo{
+    filter: grayscale(100%) brightness(1000%);
+    height: 50px;
+}
+#logo:hover{
+    filter: grayscale(0%) brightness(100%);
     height: 50px;
 }
 
 #links{
-    padding: 0px 30px;
-}
-
-.separator{
-    padding-right: 5px;
-    border-right: 2px solid #030303;
+    padding: 0px 0px 0px 20px;
 }
 
 #socials{
-    padding: 0px 30px;
+    padding: 0px 20px 0px 0px;
 }
 
 #hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 800px;
+    height: 100vh;
     background: #030303;
+    background-image: url("img/hero.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-#whatwedo{
-    width: 100%;
-    height: 300px;
-    background-color: #FCF7F8;
+
+#hero div{
+    text-align: center;
+}
+
+#hero div h1{
+    font-family: 'Bebas Neue', cursive;
+    color: #FCF7F8;
+    font-weight: bolder;
+    font-size: 5em;
+    margin-bottom: 0px;
+    
+}
+
+#hero div h4{
+    font-family: 'Bebas Neue', cursive;
+    color: #69293D;
+    font-weight: bolder;
+    font-size: 3em;
+    margin-top: 0px;
 
 }
-#about{}
-#gallery{}
+
+#whatwedo{
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: #030303;
+    background-image: url("img/splash.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#whatwedo h2{
+    padding-bottom: 200px;
+    font-family: 'Bebas Neue', cursive;
+    color: #FCF7F8;
+    font-weight: bolder;
+    font-size: 5em;
+    margin-bottom: 0px;
+
+}
+#about{
+    background-color: #FCF7F9;
+    height: 800px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#about img{
+    width: 50%;
+}
+
+#about p{
+    color: #030303;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2em;
+    padding: 80px;
+    margin: 0px;
+}
+
+
+#someworks{
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #030303;
+    background-image: url("img/studio.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-size: cover;
+}
+
+#someworks h2{
+    font-family: 'Bebas Neue', cursive;
+    color: #FCF7F8;
+    font-weight: bolder;
+    font-size: 5em;
+    margin-bottom: 0px;
+}
+#someworks h4{
+    font-family: 'Bebas Neue', cursive;
+    color: #FCF7F8;
+    font-weight: bolder;
+    font-size: 3em;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+#gallery{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px 120px 20px;
+}
+
+#gallery div{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#gallery h2{
+    color: #FCF7F9;
+
+}
+
+#gallery img{
+    filter: grayscale(100%);
+    padding: 10px 20px;
+    width: 330px;
+    height: 330px;
+    transition: 0.2s ease-in-out;
+
+}
+
+#gallery img:hover{
+    filter: grayscale(0%);
+    transform: scale(1.05);
+    transition: 0.2s ease-in-out;
+}
+
+#gallery h2{
+    width: 100%;
+    font-size: 4em;
+    margin: 30px 0px;
+    text-align: center;
+}
+
+
 #spotify{
     width: 100%;
-    height: 300px;
+    height: 70vh;
     background-color: #1DB954;
 }
 
 #youtube{
     width: 100%;
-    height: 300px;
+    height: 70vh;
     background-color: #FF0000;
 }
 #contact{
@@ -80,13 +234,14 @@ footer{
 }
 
 .uk-icon-button{
-    background-color: #FCF7F8;
-    color: #69293D;
+    background-color: #69293D;
+    color: #FCF7F8;
+    transition: 0.3s ease-in-out;
 }
 
 .uk-icon-button:hover{
-    background-color: #69293D;
-    color: #FCF7F8;
+    background-color: #FCF7F8;
+    color: #69293D;
     transition: 0.3s ease-in-out;
 }
 
