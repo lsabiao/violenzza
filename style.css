@@ -1,12 +1,47 @@
 *{
     font-family: 'Spline Sans Mono', monospace !important;
+    margin: 0;
+    padding: 0;
 }
+
 html, body{
     background-color: #030303;
 }
 
 nav{
+    position: fixed;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+    height: 50px;
     background-color: #69293D;
+}
+
+nav a{
+    color: #FCF7F8;
+}
+nav a:hover{
+    color: #030303;
+    transition: 0.2s ease-in-out;
+}
+
+#logo{
+    height: 50px;
+}
+
+#links{
+    padding: 0px 30px;
+}
+
+.separator{
+    padding-right: 5px;
+    border-right: 2px solid #030303;
+}
+
+#socials{
+    padding: 0px 30px;
 }
 
 #hero{
@@ -43,3 +78,27 @@ footer{
     height: 200px;
     background-color: #69293D;
 }
+
+.uk-icon-button{
+    background-color: #FCF7F8;
+    color: #69293D;
+}
+
+.uk-icon-button:hover{
+    background-color: #69293D;
+    color: #FCF7F8;
+    transition: 0.3s ease-in-out;
+}
+
+a:hover{text-decoration: none;}
+/* unvisited link */
+a:link {}
+  
+  /* visited link */
+a:visited {}
+  
+  /* mouse over link */
+a:hover {}
+  
+  /* selected link */
+a:active {}
