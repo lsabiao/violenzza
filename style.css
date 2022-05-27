@@ -1,0 +1,45 @@
+*{
+    font-family: 'Spline Sans Mono', monospace !important;
+}
+html, body{
+    background-color: #030303;
+}
+
+nav{
+    background-color: #69293D;
+}
+
+#hero{
+    width: 100%;
+    height: 800px;
+    background: #030303;
+}
+#whatwedo{
+    width: 100%;
+    height: 300px;
+    background-color: #FCF7F8;
+
+}
+#about{}
+#gallery{}
+#spotify{
+    width: 100%;
+    height: 300px;
+    background-color: #1DB954;
+}
+
+#youtube{
+    width: 100%;
+    height: 300px;
+    background-color: #FF0000;
+}
+#contact{
+    width: 100%;
+    height: 500px;
+}
+
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: #69293D;
+}
