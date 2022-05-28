@@ -112,27 +112,105 @@ nav a img:hover{
     margin-bottom: 0px;
 
 }
+
 #about{
-    background-color: #FCF7F9;
+    background-color: #000;
     display: flex;
+    flex-direction: column;
     align-content: center;
     justify-content: center;
     align-items: center;
 
 }
 
-#about img{
-    width: 50%;
+#bruno{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+#diogo{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-#about p{
-    color: #030303;
+#bruno h3, #diogo h3{
+    font-family: 'Bebas Neue', cursive;
+    color: #69293D;
+    font-size: 3em;
+    padding-top: 40px;
+}
+
+#bruno p, #diogo p{
+    font-family: 'Bebas Neue', cursive;
+    color: #FCF7F8;
+    font-size: 2em;
+    padding-top: 20px;
+}
+
+#bruno p{
+    padding-left: 10px;
+    padding-right: 40px;
+    text-align: justify;
+}
+
+#diogo p{
+    padding-right: 10px;
+    padding-left: 40px;
+    text-align: justify;
+}
+
+#bruno h3{
+    padding-left: 10px;
+    text-align: left;
+}
+
+#diogo h3{
+    padding-right: 10px;
+    text-align: right;
+}
+
+#about #bruno img{
+    height: 50vh;
+    padding: 10px 0px 10px 60px;
+
+}
+
+#about #diogo img{
+    height: 50vh;
+    padding: 10px 60px 10px 0px;
+
+}
+
+#us{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0px;
+
+}
+
+#us p{
+    color: #FCF7F8;
     font-family: 'Bebas Neue', cursive;
     font-size: 2em;
-    padding: 80px;
+    padding: 40px 40px 30px 40px;
     margin: 0px;
 }
 
+#us img{
+    margin: 0 auto;
+    padding-bottom: 50px;
+
+}
 
 #someworks{
     width: 100%;
@@ -244,6 +322,18 @@ footer{
     background-color: #FCF7F8;
     color: #69293D;
     transition: 0.3s ease-in-out;
+}
+
+.icon-inverse{
+    background-color: #000;
+    color: #69293D !important;
+    transition: 0.3s ease-in-out !important;
+}
+
+.icon-inverse:hover{
+    background-color: #000;
+    color: #FCF7F8 !important;
+    transition: 0.3s ease-in-out !important;
 }
 
 a:hover{text-decoration: none;}
