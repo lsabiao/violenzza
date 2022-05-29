@@ -33,14 +33,15 @@
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.1/dist/js/uikit-icons.min.js"></script>
   </head>
   <body>
-    <nav>
+    <nav uk-navbar uk-sticky="offset: 0;" uk-scrollspy-nav="cls: selected;closest: a; scroll: true; offset: 50">
         <span id="links">
-            <a href="#"><img src="img/logo.png" id="logo"></a>
-            <a class="bgchange" href="#">Sobre</a>
-            <a class="bgchange selected"href="#">Galeria</a>
-            <a class="bgchange"href="#">Tracks</a>
-            <a class="bgchange"href="#">Vídeos</a>
-            <a class="bgchange" href="#">Contato</a>
+            <a href="#hero"><img src="img/logo.png" id="logo"></a>
+            <a class="bgchange" href="#about">Sobre</a>
+            <a class="bgchange" href="#spotify">Tracks</a>
+            <a class="bgchange "href="#gallery">Galeria</a>
+            <a class="bgchange" href="#youtube">Vídeos</a>
+            <a class="bgchange" href="#events">Eventos</a>
+            <a class="bgchange" href="#contact">Contato</a>
         </span>
         <span id="socials">
             <a href="#" class="uk-icon-link uk-icon-button" uk-icon="icon: instagram"></a>
@@ -85,6 +86,29 @@
 
         </div>
     </div>
+
+    <div id="spotify">
+        <h2>Últimos Lançamentos</h2>
+        <div id="tracks">
+            <div>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7GY68sCAY4s1xk42CTJAfn?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            </div>
+
+            <div>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3EhTmk9pdclq5qHH15wEjX?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            </div>
+            <div>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/50SGucGvMan1kbLqyuaEr6?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            </div>
+            <div>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/2QlPthgUJ0b1xrs4BNRBEx?utm_source=generator" width="100%" height="232" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            </div>
+            <div>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/5x7GdOcXcuUiSVCbl0hEfm?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            </div>
+        </div>
+    </div>
+
     <div id="someworks">
         <h2>Lorem ipsum dolor sit amet</h2>
         <h4>Aliquam nec velit vel metus rutrum ultricies.  Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Interdum et malesuada fames ac ante ipsum primis in faucibus</h4>
@@ -119,28 +143,81 @@
             <a href="https://picsum.photos/350/400" data-type="image" data-caption="Caption">
                 <img src="https://picsum.photos/350/400" />
             </a>
-            <a href="https://picsum.photos/400/350" data-type="image" data-caption="Caption">
-                <img src="https://picsum.photos/400/350" />
-            </a>
+
         </div>
 
     </div>
 
-    <div id="spotify">
-    </div>
-
     <div id="youtube">
+        <h2>Últimos Vídeos</h2>
+
+        <div id="videos">
+            <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/bT9gIsci3m0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/_O1hM-k3aUY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dUscxlBOfNQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/y9K18CGEeiI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <div id="events">
+        <h2>Próximos Eventos</h2>
+        <table>
+            <tr>
+                <th id="date">Data</th>
+                <th id="place">Local</th>
+                <th id="buy">Ingresso</th>
+            </tr>
+            <tr>
+              <td>01/01/1900</td>
+              <td>Lorem Ipsum</td>
+              <td><button>Comprar</button></td>
+            </tr>
+            <tr>
+                <td>01/01/1900</td>
+                <td>Lorem Ipsum</td>
+                <td><button>Comprar</button></td>
+              </tr>
+              <tr>
+                <td>01/01/1900</td>
+                <td>Lorem Ipsum</td>
+                <td><button>Comprar</button></td>
+              </tr>
+              <tr>
+                <td>01/01/1900</td>
+                <td>Lorem Ipsum</td>
+                <td><button>Comprar</button></td>
+              </tr>
+              <tr>
+                <td>01/01/1900</td>
+                <td>Lorem Ipsum</td>
+                <td><button>Comprar</button></td>
+              </tr>
+        </table>
     </div>
 
     <div id="contact">
-        <h1>Fale conosco!</h1>
-        <form>
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <textarea></textarea>
-
-            <input type="submit">
+        <h2>Fale conosco!</h2>
+        <form class="uk-form-stacked">
+            <div id="msgus">
+                    <div class="uk-form-controls">
+                    <label class="uk-form-label" for="form-stacked-text">Nome:</label>
+                    <input class="uk-input" type="text" id="name" placeholder="Seu Nome" required>
+                    <label class="uk-form-label" for="form-stacked-text">Telefone:</label>
+                    <input class="uk-input" type="number" id="tel" placeholder="(11)91234-1234" required>
+                    <label class="uk-form-label" for="form-stacked-text">Email:</label>
+                    <input class="uk-input"  type="email" id="email" placeholder="nome@email.com.br" required>
+                    <label class="uk-form-label" for="form-stacked-text">Mensagem:</label>
+                    <textarea class="uk-textarea" id="msg" rows="8" placeholder="Sua mensagem aqui..." maxlength="240" required></textarea>
+                    <input id="enviar" class="uk-button" type="submit" value="Enviar Mensagem">
+                </div>
+            </div>
         </form>
     </div>
 

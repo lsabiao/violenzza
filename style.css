@@ -34,8 +34,8 @@ nav .bgchange:hover{
     background-color: #FCF7F8;
     transition: 0.2s ease-in-out;
 }
-nav .bgchange .selected{
-    color: #69293D;
+.bgchange.selected{
+    color: #69293D !important;
     background-color: #FCF7F8;
 }
 nav a img:hover{
@@ -71,6 +71,7 @@ nav a img:hover{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 
 #hero div{
     text-align: center;
@@ -301,14 +302,185 @@ nav a img:hover{
     background-color: #1DB954;
 }
 
+#spotify h2{
+    padding-top: 40px;
+    color: #030303;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3em;
+    text-align: center;
+}
+
+#spotify #tracks{
+    margin: 0px 50px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+
+#spotify #tracks::-webkit-scrollbar {
+    width: 6px;
+    height: 16px;
+}
+#spotify #tracks::-webkit-scrollbar-track {
+border-radius: 10px;
+background: rgba(0,0,0,0.1);
+}
+#spotify #tracks::-webkit-scrollbar-thumb{
+border-radius: 10px;
+background: rgba(0,0,0,0.2);
+}
+#spotify #tracks::-webkit-scrollbar-thumb:hover{
+background: rgba(0,0,0,0.4);
+}
+#spotify #tracks::-webkit-scrollbar-thumb:active{
+background: rgba(0,0,0,.9);
+}
+
+#spotify #tracks div{
+    display: inline-block;
+    padding: 40px 10px;
+    width: 380px;
+}
+
 #youtube{
     width: 100%;
     height: 70vh;
-    background-color: #FF0000;
+    background-color: #030303;
 }
+
+#youtube h2{
+    padding-top: 40px;
+    color: #FCF7F9;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3em;
+    text-align: center;
+}
+
+#youtube #videos{
+    margin: 0px 50px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+
+#youtube #videos::-webkit-scrollbar {
+    width: 6px;
+    height: 16px;
+}
+#youtube #videos::-webkit-scrollbar-track {
+border-radius: 10px;
+background: rgba(105,41,61,0.1);
+}
+#youtube #videos::-webkit-scrollbar-thumb{
+border-radius: 10px;
+background: rgba(105,41,61,0.2);
+}
+#youtube #videos::-webkit-scrollbar-thumb:hover{
+background: rgba(105,41,61,0.4);
+
+}
+#youtube #videos::-webkit-scrollbar-thumb:active{
+background: rgba(105,41,61,0.9);
+}
+
+#youtube #videos div{
+    display: inline-block;
+    padding: 40px 10px;
+    width: 560px;
+}
+
+#events{
+    width: 100%;
+    margin: 0 auto;
+    height: 70vh;
+}
+
+#events h2{
+    font-size: 3em;
+    font-family: 'Bebas Neue', cursive;
+    margin: 70px 0px;
+    color: #FCF7F9;
+    text-align: center;
+}
+
+#events table{
+    border-collapse: collapse;
+    color: #FCF7F9;
+    width: 80%;
+    padding: 0px 100px;
+    margin: 0 auto;
+}
+
+#events table #date{
+    width: 30px;
+}
+
+#events table #place{
+}
+
+#events table #buy{
+    width: 30px;
+}
+
+#events table th{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5em;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    border-bottom: #FCF7F9 solid 1px;
+    padding: 20px 0px;
+}
+
+#events table td{
+    font-size: 1.5em;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    border-bottom: #FCF7F9 solid 1px;
+    padding: 20px 40px;
+}
+
 #contact{
     width: 100%;
-    height: 500px;
+    margin: 0px 0px 120px 0px;
+}
+
+#contact h2{
+    color: #FCF7F9;
+    font-size: 3em;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+}
+
+#contact label{
+    color: #FCF7F9;
+    font-size: 2em;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+}
+
+#contact #msgus{
+    width: 80%;
+    margin: 0 auto;
+}
+
+#contact textarea{
+    resize: none;
+}
+
+#contact #enviar{
+    float: right;
+    margin: 30px 0px;
+    color:#FCF7F9;
+    background-color: rgba(105,41,61,1);;
+}
+
+#contact #enviar:hover{
+    float: right;
+    margin: 30px 0px;
+    color:#FCF7F9;
+    background-color: rgba(105,41,61,0.6);;
 }
 
 footer{
@@ -353,3 +525,5 @@ a:hover {}
   
   /* selected link */
 a:active {}
+
+
