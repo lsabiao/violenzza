@@ -43,14 +43,32 @@
             <a class="bgchange" href="#events">Eventos</a> -->
             <a class="bgchange" href="#contact">Contato</a>
         </span>
+        <span id="mobile-menu">
+            <a id="burguer" uk-toggle="target: #offcanvas-menu" href="#" class="uk-icon-link uk-icon-button" uk-icon="icon: menu"></a>
+        </span>
         <span id="socials">
             <a href="#" class="uk-icon-link uk-icon-button" uk-icon="icon: instagram"></a>
             <a href="#" class="uk-icon-link uk-icon-button" uk-icon="icon: tiktok"></a>
             <a href="#" class="uk-icon-link uk-icon-button" uk-icon="icon: whatsapp"></a>
             <a href="#" class="uk-icon-link uk-icon-button" uk-icon="icon: youtube"></a>
-
         </span>
     </nav>
+
+    <div id="offcanvas-menu" uk-offcanvas="overlay: true" uk-scrollspy-nav="cls: selected;closest: a; scroll: true; offset: 50">
+        <div class="uk-offcanvas-bar">
+            <!-- <button class="uk-offcanvas-close" type="button" uk-close></button> -->
+            <a href="#hero" uk-toggle="target: #offcanvas-menu"><img src="img/logo.png"/></a>
+            <span id="mobile-links">
+                <a class="bgchange" href="#about" uk-toggle="target: #offcanvas-menu">Sobre</a>
+                <a class="bgchange" href="#spotify" uk-toggle="target: #offcanvas-menu">Tracks</a>
+                <!-- <a class="bgchange "href="#gallery" uk-toggle="target: #offcanvas-menu">Galeria</a>
+                <a class="bgchange" href="#youtube" uk-toggle="target: #offcanvas-menu">Vídeos</a>
+                <a class="bgchange" href="#events" uk-toggle="target: #offcanvas-menu">Eventos</a> -->
+                <a class="bgchange" href="#contact" uk-toggle="target: #offcanvas-menu">Contato</a>
+            </span>
+        </div>
+    </div>
+
     <div id="hero">
         <div>
             <img src="img/logo.png">
@@ -65,8 +83,8 @@
     <div id="about">
         <div id="us">
             <div id="profile">
-                <img src="img/bruno.png" />
-                <img src="img/diogo.png" />
+                <!-- <img src="img/bruno.png" />
+                <img src="img/diogo.png" /> -->
             </div>
             <p><span class="highlight">Violenzza</span> é um projeto de música eletrônica criado pelos irmãos <span class="highlight">Bruno</span> e <span class="highlight"> Diogo Bigliazzi</span>.</p>
             <p>Seus sets e apresentações contam com muitos mashup’s, edits e produções originais, além de uma presença de palco que traz a sensação de euforia para o público.
@@ -138,7 +156,7 @@
         </div>
 
     </div>
-
+    <!--
     <div id="youtube">
         <h2>Últimos Vídeos</h2>
 
@@ -191,7 +209,7 @@
                 <td><a href=""><button class="uk-button">Comprar <span uk-icon="icon:cart"></span></button></a></td>
               </tr>
         </table>
-    </div>
+    </div>-->
 
     <div id="contact">
         <h2>Entre em contato!</h2>

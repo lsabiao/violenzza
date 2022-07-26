@@ -20,7 +20,6 @@ nav{
     box-shadow: 0 6px 10px 0px rgba(0,0,0,.2);
     z-index: 999;
     /* border-radius: 0px 0px 5px 5px; */
-
 }
 
 nav .bgchange{
@@ -41,10 +40,16 @@ nav a img:hover{
     background-color: #FCF7F8;
 }
 
+#mobile-menu{
+    display: none;
+}
+
+
 #logo{
     filter: grayscale(100%) brightness(1000%);
     height: 50px;
 }
+
 #logo:hover{
     filter: grayscale(0%) brightness(100%);
     height: 50px;
@@ -88,7 +93,9 @@ nav a img:hover{
 #hero div img{
     margin-top: 350px;
     filter: grayscale(100%) brightness(1000%);
-    height: 200px;
+    max-height: 200px;
+    padding: 0px 50px;
+
 
 }
 
@@ -136,11 +143,12 @@ nav a img:hover{
 }
 
 #profile{
-
+    display: flex;
+    width: 100%;
 }
 
 #profile img{
-    height: 600px;
+    max-width: 500px;
     display: inline-block;
 }
 
@@ -224,6 +232,7 @@ nav a img:hover{
 }
 
 #us p{
+    text-align: justify;
     color: #FCF7F8;
     font-family: 'Bebas Neue', cursive;
     font-size: 2em;
@@ -318,7 +327,7 @@ nav a img:hover{
 
 #spotify{
     width: 100%;
-    height: 70vh;
+    min-height: 620px;
     background-color: #1DB954;
 }
 
@@ -499,7 +508,7 @@ background: rgba(105,41,61,0.9);
 }
 
 #contact #msgus{
-    width: 40%;
+    width: 0%;
     margin: 0 auto;
 }
 
@@ -607,5 +616,55 @@ a:hover {
   /* selected link */
 a:active {    
     color: #FCF7F9 ;
+}
+
+@media (max-width: 630px){  
+    #links{
+        display: none;
+    }
+    #mobile-menu{
+        display: inline-block;
+    }
+
+    #mobile-links{
+        display: flex;
+        flex-direction: column;
+        font-size: 1.3em;
+    }
+
+    #mobile-links a{
+        padding-left: 20px;
+    }
+    
+    #mobile-links a:hover{
+       background-color: white;
+       color:#69293D;
+    }
+
+    .uk-offcanvas-bar{
+        padding: 0px;
+    }
+
+    .uk-offcanvas-bar img{
+        margin: 50px 20px 30px 20px !important;
+        filter: grayscale(100%) brightness(1000%);
+        height: 50px;
+    }
+
+    .uk-offcanvas-slide{
+        background-color: #69293D !important;
+    }
+    #spotify #tracks{
+        margin: 0px 0px;
+
+    }
+    #contact #msgus{
+        width: 95%;
+        padding: 0px 10px;
+    }
+    #events button{
+        padding-right: 10px;
+    }
+
 }
 
